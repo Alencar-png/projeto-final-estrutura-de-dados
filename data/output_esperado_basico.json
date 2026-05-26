@@ -1,0 +1,117 @@
+{
+  "resultados": [
+    {
+      "id": 0,
+      "tipo": "search",
+      "query": "árvore splay",
+      "k": 3,
+      "top_k": [
+        {
+          "doc_id": "doc2",
+          "score": 0.368148,
+          "titulo": "Árvores Balanceadas"
+        },
+        {
+          "doc_id": "doc5",
+          "score": 0.153922,
+          "titulo": "Tries e Autocompletar"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "tipo": "search",
+      "query": "ordenação heap",
+      "k": 3,
+      "top_k": [
+        {
+          "doc_id": "doc3",
+          "score": 0.174884,
+          "titulo": "Algoritmos de Ordenação"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "tipo": "search",
+      "query": "índice invertido",
+      "k": 5,
+      "top_k": [
+        {
+          "doc_id": "doc4",
+          "score": 0.349769,
+          "titulo": "Recuperação de Informação"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "tipo": "autocomplete",
+      "prefix": "arv",
+      "limit": 5,
+      "sugestoes": [
+        "arvore",
+        "arvores"
+      ]
+    },
+    {
+      "id": 4,
+      "tipo": "autocomplete",
+      "prefix": "or",
+      "limit": 5,
+      "sugestoes": [
+        "ordenacao"
+      ]
+    },
+    {
+      "id": 5,
+      "tipo": "cache_get",
+      "doc_id": "doc2",
+      "metadados": {
+        "id": "doc2",
+        "titulo": "Árvores Balanceadas",
+        "metadados": {
+          "autor": "Sleator",
+          "ano": 1985,
+          "categoria": "artigo"
+        }
+      }
+    },
+    {
+      "id": 6,
+      "tipo": "cache_get",
+      "doc_id": "doc999",
+      "metadados": null
+    }
+  ],
+  "estatisticas": {
+    "indice_invertido": {
+      "vocabulary": 57,
+      "documents": 5,
+      "hash_index": {
+        "size": 57,
+        "capacity": 128,
+        "load_factor": 0.4453,
+        "non_empty_buckets": 46,
+        "max_chain": 3,
+        "avg_chain_non_empty": 1.239
+      }
+    },
+    "trie": {
+      "words": 57,
+      "nodes": 342,
+      "max_depth": 14
+    },
+    "cache_splay": {
+      "size": 4,
+      "capacity": 256,
+      "hits": 1,
+      "misses": 5,
+      "evictions": 0,
+      "root": "doc5"
+    },
+    "tempo_indexacao_ms": 1.709,
+    "tempo_consultas_ms": 0.089,
+    "total_consultas": 7
+  }
+}

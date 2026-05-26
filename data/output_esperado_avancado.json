@@ -1,0 +1,159 @@
+{
+  "resultados": [
+    {
+      "id": 0,
+      "tipo": "search",
+      "query": "splay árvore",
+      "k": 5,
+      "top_k": [
+        {
+          "doc_id": "doc_dup",
+          "score": 1.81093,
+          "titulo": "splay splay splay"
+        },
+        {
+          "doc_id": "doc2",
+          "score": 0.339549,
+          "titulo": "Árvores Balanceadas"
+        },
+        {
+          "doc_id": "doc5",
+          "score": 0.16463,
+          "titulo": "Tries e Autocompletar"
+        },
+        {
+          "doc_id": "doc_long",
+          "score": 0.041158,
+          "titulo": "Documento extenso sobre RAG"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "tipo": "search",
+      "query": "heap sort ordenação",
+      "k": 5,
+      "top_k": [
+        {
+          "doc_id": "doc_long",
+          "score": 0.227643,
+          "titulo": "Documento extenso sobre RAG"
+        },
+        {
+          "doc_id": "doc3",
+          "score": 0.208673,
+          "titulo": "Algoritmos de Ordenação"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "tipo": "search",
+      "query": "termo_que_nao_existe_xyz",
+      "k": 5,
+      "top_k": []
+    },
+    {
+      "id": 3,
+      "tipo": "search",
+      "query": "",
+      "k": 5,
+      "top_k": []
+    },
+    {
+      "id": 4,
+      "tipo": "autocomplete",
+      "prefix": "spl",
+      "limit": 5,
+      "sugestoes": [
+        "splay"
+      ]
+    },
+    {
+      "id": 5,
+      "tipo": "autocomplete",
+      "prefix": "zzz",
+      "limit": 5,
+      "sugestoes": []
+    },
+    {
+      "id": 6,
+      "tipo": "autocomplete",
+      "prefix": "",
+      "limit": 5,
+      "sugestoes": []
+    },
+    {
+      "id": 7,
+      "tipo": "cache_get",
+      "doc_id": "doc_dup",
+      "metadados": {
+        "id": "doc_dup",
+        "titulo": "splay splay splay",
+        "metadados": {
+          "categoria": "duplicado"
+        }
+      }
+    },
+    {
+      "id": 8,
+      "tipo": "cache_get",
+      "doc_id": "doc_long",
+      "metadados": {
+        "id": "doc_long",
+        "titulo": "Documento extenso sobre RAG",
+        "metadados": {
+          "categoria": "abrangente"
+        }
+      }
+    },
+    {
+      "id": 9,
+      "tipo": "cache_get",
+      "doc_id": "doc_dup",
+      "metadados": {
+        "id": "doc_dup",
+        "titulo": "splay splay splay",
+        "metadados": {
+          "categoria": "duplicado"
+        }
+      }
+    },
+    {
+      "id": 10,
+      "tipo": "cache_get",
+      "doc_id": "doc_inexistente",
+      "metadados": null
+    }
+  ],
+  "estatisticas": {
+    "indice_invertido": {
+      "vocabulary": 82,
+      "documents": 8,
+      "hash_index": {
+        "size": 82,
+        "capacity": 128,
+        "load_factor": 0.6406,
+        "non_empty_buckets": 63,
+        "max_chain": 3,
+        "avg_chain_non_empty": 1.302
+      }
+    },
+    "trie": {
+      "words": 82,
+      "nodes": 440,
+      "max_depth": 14
+    },
+    "cache_splay": {
+      "size": 5,
+      "capacity": 256,
+      "hits": 4,
+      "misses": 6,
+      "evictions": 0,
+      "root": "doc_long"
+    },
+    "tempo_indexacao_ms": 1.346,
+    "tempo_consultas_ms": 0.11,
+    "total_consultas": 11
+  }
+}

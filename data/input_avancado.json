@@ -1,0 +1,131 @@
+{
+  "documentos": [
+    {
+      "id": "doc1",
+      "titulo": "Introdução a Estruturas de Dados",
+      "conteudo": "Estruturas de dados são fundamentais para algoritmos eficientes. Tabelas hash oferecem acesso O(1) em média.",
+      "metadados": {
+        "autor": "Knuth",
+        "ano": 1973,
+        "categoria": "livro"
+      }
+    },
+    {
+      "id": "doc2",
+      "titulo": "Árvores Balanceadas",
+      "conteudo": "Árvores AVL, Red-Black e Splay garantem operações em O(log N). A árvore splay move elementos acessados para a raiz.",
+      "metadados": {
+        "autor": "Sleator",
+        "ano": 1985,
+        "categoria": "artigo"
+      }
+    },
+    {
+      "id": "doc3",
+      "titulo": "Algoritmos de Ordenação",
+      "conteudo": "HeapSort possui complexidade O(N log N) no pior caso e usa memória adicional constante.",
+      "metadados": {
+        "autor": "Williams",
+        "ano": 1964,
+        "categoria": "artigo"
+      }
+    },
+    {
+      "id": "doc4",
+      "titulo": "Recuperação de Informação",
+      "conteudo": "O índice invertido mapeia termos para documentos. TF-IDF é uma técnica clássica de pontuação.",
+      "metadados": {
+        "autor": "Salton",
+        "ano": 1975,
+        "categoria": "livro"
+      }
+    },
+    {
+      "id": "doc5",
+      "titulo": "Tries e Autocompletar",
+      "conteudo": "A árvore Trie é ideal para buscas por prefixo. Sistemas de autocompletar a utilizam intensivamente.",
+      "metadados": {
+        "autor": "Fredkin",
+        "ano": 1960,
+        "categoria": "artigo"
+      }
+    },
+    {
+      "id": "doc_empty",
+      "titulo": "",
+      "conteudo": "",
+      "metadados": {
+        "categoria": "vazio"
+      }
+    },
+    {
+      "id": "doc_dup",
+      "titulo": "splay splay splay",
+      "conteudo": "splay splay árvore splay árvore splay",
+      "metadados": {
+        "categoria": "duplicado"
+      }
+    },
+    {
+      "id": "doc_long",
+      "titulo": "Documento extenso sobre RAG",
+      "conteudo": "Sistemas de recuperação aumentada por geração utilizam índices vetoriais e textuais. Tabelas hash são usadas como índice invertido. Árvores splay servem como cache adaptativo. Algoritmos como heap sort, merge sort e quick sort possuem complexidades diferentes. TF-IDF, BM25 e embeddings são técnicas comuns de pontuação.",
+      "metadados": {
+        "categoria": "abrangente"
+      }
+    }
+  ],
+  "consultas": [
+    {
+      "tipo": "search",
+      "query": "splay árvore",
+      "k": 5
+    },
+    {
+      "tipo": "search",
+      "query": "heap sort ordenação",
+      "k": 5
+    },
+    {
+      "tipo": "search",
+      "query": "termo_que_nao_existe_xyz",
+      "k": 5
+    },
+    {
+      "tipo": "search",
+      "query": "",
+      "k": 5
+    },
+    {
+      "tipo": "autocomplete",
+      "prefix": "spl",
+      "limit": 5
+    },
+    {
+      "tipo": "autocomplete",
+      "prefix": "zzz",
+      "limit": 5
+    },
+    {
+      "tipo": "autocomplete",
+      "prefix": "",
+      "limit": 5
+    },
+    {
+      "tipo": "cache_get",
+      "doc_id": "doc_dup"
+    },
+    {
+      "tipo": "cache_get",
+      "doc_id": "doc_long"
+    },
+    {
+      "tipo": "cache_get",
+      "doc_id": "doc_dup"
+    },
+    {
+      "tipo": "cache_get",
+      "doc_id": "doc_inexistente"
+    }
+  ]
+}

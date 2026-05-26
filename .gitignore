@@ -1,0 +1,22 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+.venv/
+venv/
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Saídas geradas em runtime (NÃO ignoramos os gabaritos em /data)
+/output.json
+/data/output_real_*.json
+
+# Logs
+*.log

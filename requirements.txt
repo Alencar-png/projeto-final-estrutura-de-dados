@@ -1,0 +1,6 @@
+# Dependências para GERAÇÃO de dados sintéticos (permitidas pela rubrica).
+# O núcleo algorítmico (Hash, Trie, Splay, HeapSort) NÃO depende destas libs.
+Faker==25.0.0
+
+# Dependência apenas para gerar o relatório acadêmico (DOCX). Não toca no núcleo.
+python-docx==1.2.0

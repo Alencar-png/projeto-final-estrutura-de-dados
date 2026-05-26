@@ -209,7 +209,7 @@ def build() -> Document:
     _enable_page_numbers(doc)
 
     # ----------------------------------------------------------------- CAPA
-    _para_center(doc, "CENTRO UNIVERSITÁRIO DE MARINGÁ — UNIMA", bold=True, size=12)
+    _para_center(doc, "CENTRO UNIVERSITÁRIO DE MACEIÓ — UNIMA", bold=True, size=12)
     _para_center(doc, "CURSO DE GRADUAÇÃO EM ENGENHARIA DE SOFTWARE", bold=True, size=12)
     for _ in range(6):
         doc.add_paragraph()
@@ -231,7 +231,7 @@ def build() -> Document:
     )
     for _ in range(12):
         doc.add_paragraph()
-    _para_center(doc, "MARINGÁ", bold=True, size=12)
+    _para_center(doc, "MACEIÓ", bold=True, size=12)
     _para_center(doc, "2026", bold=True, size=12)
     _add_page_break(doc)
 
@@ -262,13 +262,13 @@ def build() -> Document:
     run = p.add_run(
         "Trabalho apresentado como requisito parcial à conclusão da "
         "disciplina de Estrutura de Dados, do Curso de Engenharia de "
-        "Software do Centro Universitário de Maringá — UNIMA."
+        "Software do Centro Universitário de Maceió — UNIMA."
     )
     run.font.name = FONT_FAMILY
     run.font.size = Pt(10)
     for _ in range(10):
         doc.add_paragraph()
-    _para_center(doc, "MARINGÁ", bold=True, size=12)
+    _para_center(doc, "MACEIÓ", bold=True, size=12)
     _para_center(doc, "2026", bold=True, size=12)
     _add_page_break(doc)
 

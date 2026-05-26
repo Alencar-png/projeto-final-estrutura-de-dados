@@ -210,7 +210,7 @@ def build() -> Document:
 
     # ----------------------------------------------------------------- CAPA
     _para_center(doc, "CENTRO UNIVERSITÁRIO DE MACEIÓ — UNIMA", bold=True, size=12)
-    _para_center(doc, "CURSO DE GRADUAÇÃO EM ENGENHARIA DE SOFTWARE", bold=True, size=12)
+    _para_center(doc, "CURSO DE GRADUAÇÃO EM CIÊNCIA DA COMPUTAÇÃO", bold=True, size=12)
     for _ in range(6):
         doc.add_paragraph()
     _para_center(doc, "GUILHERME ROMUALDO", bold=True, size=12)
@@ -261,8 +261,8 @@ def build() -> Document:
     p.paragraph_format.line_spacing = 1.0
     run = p.add_run(
         "Trabalho apresentado como requisito parcial à conclusão da "
-        "disciplina de Estrutura de Dados, do Curso de Engenharia de "
-        "Software do Centro Universitário de Maceió — UNIMA."
+        "disciplina de Estrutura de Dados, do Curso de Ciência da "
+        "Computação do Centro Universitário de Maceió — UNIMA."
     )
     run.font.name = FONT_FAMILY
     run.font.size = Pt(10)
